@@ -1,0 +1,10 @@
+.title-center {position: absolute;top: 30%;left: 0;bottom: 0;right: 0;margin: auto;}
+.total-center{position:absolute;top:10%;left:0;bottom:0;right:0;margin:auto;}
+.width-80{width: 80%; margin: auto}
+.width-40{width: 40%; margin: auto}
+.nav-offset{margin-top: 100px}
+.divider{margin-right:10px !important;}
+.main-button{font-size: 3vw;width: 90%;padding-top: 35%;padding-bottom: 35%;}
+div.scrollmenu{overflow: auto; white-space: nowrap;}
+.btn-transparent{background-color: transparent;}
+@media (min-width: 576px){font-size: 16px;}
