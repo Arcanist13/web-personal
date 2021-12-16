@@ -1,1 +1,20 @@
-<p>fil works!</p>
+<!-- Spell list -->
+<div class="table-responsive">
+  <table matSort (matSortChange)="sortData($event)" class="table table-sm table-hover no-select">
+    <thead class="thead-light">
+      <tr class="d-flex">
+        <th mat-sort-header="name" class="col-10">Name</th>
+        <th mat-sort-header="authour" class="col-2">Complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let quest of fil; index as idx" class="d-flex">
+        <ng-container *ngIf="checkFilter(quest)">
+          <td class="col-10">{{ quest.name }}</td>
+          <td class="col-2">{{ quest.complete }}</td>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

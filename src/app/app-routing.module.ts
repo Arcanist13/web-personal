@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'user',
+    loadChildren: () => import('src/app/modules/user/user-routing.module').then(m => m.UserRoutingModule)
+  },
+  {
     path: 'library',
     loadChildren: () => import('src/app/modules/library/library-routing.module').then(m => m.LibraryRoutingModule)
   },
@@ -12,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/home'
+    redirectTo: '/'
   }
 ];
 

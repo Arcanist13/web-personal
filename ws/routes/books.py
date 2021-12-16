@@ -10,7 +10,7 @@ from models.user import User
 router = APIRouter()
 
 @router.get("/books", response_model=List[Book], tags=['library'])
-async def get_books(current_user: User = Depends(get_current_admin_user)):
+async def get_books():
   books = get_db_all("SELECT * FROM books")
   if books is not None:
     return books

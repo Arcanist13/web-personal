@@ -1,7 +1,7 @@
 /**
  * Model for auth response
  */
- export interface ITokenUser {
+export interface ITokenUser {
   info: IUser;
 }
 

@@ -9,8 +9,8 @@ from models.user import User
 
 router = APIRouter()
 
-@router.get("/fils", response_model=List[FIL], tags=['FIL'])
-async def get_fil(current_user: User = Depends(get_current_admin_user)):
+@router.get("/fil", response_model=List[FIL], tags=['FIL'])
+async def get_fil():
   fil = get_db_all("SELECT * FROM fil")
   if fil is not None:
     return fil
