@@ -4,7 +4,7 @@ import sqlite3
 from sqlite3.dbapi2 import connect
 from typing import Iterable
 
-DATABASE_PATH = 'dbs/dnd.db'
+DATABASE_PATH = 'db/personal.db'
 
 ### Database interactions
 def get_db_all(query: str, params: Iterable = None):

@@ -1,5 +1,6 @@
 '''User models'''
 
+from typing import Optional
 from pydantic import BaseModel
 
 class User(BaseModel):
@@ -9,7 +10,7 @@ class User(BaseModel):
   email:            str
   admin:            int
   created:          int
-  activity:         int
+  activity:         Optional[int]
 
 class UserInDB(User):
   '''Database user information'''

@@ -4,37 +4,35 @@ CREATE TABLE books (
     name            TEXT NOT NULL,
     authour         TEXT NOT NULL,
     series_name     TEXT,
-    series_volume   INTEGER,
-    series_total    INTEGER,
     genre           TEXT
 );
 
 -- # FANTASY
-INSERT INTO books VALUES (NULL, "The Fellowship of the Ring", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", 1, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Two Towers", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", 2, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "Return of the King", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", 3, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The History of Middle Earth I", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", 1, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The History of Middle Earth II", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", 2, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The History of Middle Earth III", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", 3, 3, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Silmarillion", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Silmarillion", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Book of Lost Tales I", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Book of Lost Tales II", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Lays of Beleriand", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "Unfinished Tales", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Children of Hurin", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Hobbit", "J.R.R. Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "Tales from the Perilous Realm", "J.R.R. Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Legend of Sigurd & Gudrun", "J.R.R. Tolkien/Christopher Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Complete Guide to Middle-Earth", "Robert Foster", "Middle-Earth", 1, 1, "Reference/High Fantasy");
-INSERT INTO books VALUES (NULL, "Letters from Father Christmas", "J.R.R. Tolkien/Baillie Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "Master of Middle-Earth the achievements of J.R.R Tolkien", "Paul Kocher", NULL, 1, 1, "Reference/High Fantasy");
-INSERT INTO books VALUES (NULL, "Beowulf", "Unknown/J.R.R. Tolkien/Christopher Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Story of Kullervo", "J.R.R. Tolkien/Christopher Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Fall of Arthur", "J.R.R. Tolkien/Christopher Tolkien", NULL, 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "The Fall of Gondolin", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", 1, 1, "High Fantasy");
-INSERT INTO books VALUES (NULL, "A Tolkien Bestiary", "David Day", "Middle-Earth", 1, 1, "Reference/High Fantasy");
-INSERT INTO books VALUES (NULL, "The Lord of the Rings: Weapons and Warfare", "Chris Smith", "Middle-Earth", 1, 1, "Reference/High Fantasy");
+INSERT INTO books VALUES (NULL, "The Fellowship of the Ring", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Two Towers", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", "High Fantasy");
+INSERT INTO books VALUES (NULL, "Return of the King", "J.R.R. Tolkien", "Middle-Earth/Lord of the Rings", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The History of Middle Earth I", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The History of Middle Earth II", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The History of Middle Earth III", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth/History of Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Silmarillion", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Silmarillion", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Book of Lost Tales I", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Book of Lost Tales II", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Lays of Beleriand", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "Unfinished Tales", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Children of Hurin", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Hobbit", "J.R.R. Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "Tales from the Perilous Realm", "J.R.R. Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Legend of Sigurd & Gudrun", "J.R.R. Tolkien/Christopher Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Complete Guide to Middle-Earth", "Robert Foster", "Middle-Earth", "Reference/High Fantasy");
+INSERT INTO books VALUES (NULL, "Letters from Father Christmas", "J.R.R. Tolkien/Baillie Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "Master of Middle-Earth the achievements of J.R.R Tolkien", "Paul Kocher", NULL, "Reference/High Fantasy");
+INSERT INTO books VALUES (NULL, "Beowulf", "Unknown/J.R.R. Tolkien/Christopher Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Story of Kullervo", "J.R.R. Tolkien/Christopher Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Fall of Arthur", "J.R.R. Tolkien/Christopher Tolkien", NULL, "High Fantasy");
+INSERT INTO books VALUES (NULL, "The Fall of Gondolin", "J.R.R. Tolkien/Christopher Tolkien", "Middle-Earth", "High Fantasy");
+INSERT INTO books VALUES (NULL, "A Tolkien Bestiary", "David Day", "Middle-Earth", "Reference/High Fantasy");
+INSERT INTO books VALUES (NULL, "The Lord of the Rings: Weapons and Warfare", "Chris Smith", "Middle-Earth", "Reference/High Fantasy");
 
 INSERT INTO books VALUES (NULL, "The Calling", "David Gaider", "Dragon Age", "Fantasy");
 INSERT INTO books VALUES (NULL, "The Stolen Throne", "David Gaider", "Dragon Age", "Fantasy");
@@ -337,24 +335,24 @@ INSERT INTO books VALUES (NULL, "Tales from the Mabinogion", "Gwyn Thomas", NULL
 INSERT INTO books VALUES (NULL, "Yertle the Turtle and Other Stories", "Dr. Seuss", "Dr. Seuss", "Children");
 INSERT INTO books VALUES (NULL, "Just so Stories", "Rudyard Kipling", NULL, "Fairy Tale/Children");
 INSERT INTO books VALUES (NULL, "Ghost", "Louise Welsh/Others", NULL, "Folklore/Horror");
-INSERT INTO books VALUES (NULL, "The Complete Grimm's Fairy Tales", "Jacob Grimm/Wilhelm Grimm", "Fairy Tale/Folklore");
+INSERT INTO books VALUES (NULL, "The Complete Grimm's Fairy Tales", "Jacob Grimm/Wilhelm Grimm", NULL, "Fairy Tale/Folklore");
 INSERT INTO books VALUES (NULL, "Myths and Legends", "Hamish Hamilton/Jacynth Hope-Simpson", NULL, "Mythology/Folklore");
 INSERT INTO books VALUES (NULL, "Gods and Heroes", "Michael Foss", NULL, "Mythology");
 INSERT INTO books VALUES (NULL, "Fairly Wicked Tales", "Stacey Turner", NULL, "Fairy Tale/Fable/Horror");
 
-INSERT INTO books VALUES (NULL, "The Bad Beginning", "Lemony Snicket", "A Series of Unfortunate Events", 1, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Reptile Room", "Lemony Snicket", "A Series of Unfortunate Events", 2, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Wide Window", "Lemony Snicket", "A Series of Unfortunate Events", 3, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Miserable Mill", "Lemony Snicket", "A Series of Unfortunate Events", 4, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Austere Academy", "Lemony Snicket", "A Series of Unfortunate Events", 5, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Ersatz Elevator", "Lemony Snicket", "A Series of Unfortunate Events", 6, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Vile Village", "Lemony Snicket", "A Series of Unfortunate Events", 7, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Hostile Hospital", "Lemony Snicket", "A Series of Unfortunate Events", 8, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Carnivorous Carnival", "Lemony Snicket", "A Series of Unfortunate Events", 9, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Slippery Slope", "Lemony Snicket", "A Series of Unfortunate Events", 10, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Grim Grotto", "Lemony Snicket", "A Series of Unfortunate Events", 11, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The Penultimate Peril", "Lemony Snicket", "A Series of Unfortunate Events", 12, 13, "Fiction/Children");
-INSERT INTO books VALUES (NULL, "The End", "Lemony Snicket", "A Series of Unfortunate Events", 13, 13, "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Bad Beginning", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Reptile Room", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Wide Window", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Miserable Mill", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Austere Academy", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Ersatz Elevator", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Vile Village", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Hostile Hospital", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Carnivorous Carnival", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Slippery Slope", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Grim Grotto", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The Penultimate Peril", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
+INSERT INTO books VALUES (NULL, "The End", "Lemony Snicket", "A Series of Unfortunate Events", "Fiction/Children");
 
 INSERT INTO books VALUES (NULL, "Family Bible", "Unknown", NULL, "Nonfiction/Reference");
 INSERT INTO books VALUES (NULL, "Mao's Last Dancer", "Li Cunxin", NULL, "Nonfiction/Memoir");
@@ -548,3 +546,5 @@ INSERT INTO books VALUES (NULL, "Numenera", "Monte Cook Games", NULL, "Reference
 INSERT INTO books VALUES (NULL, "The Monsters Know What They're Doing", "Keith Ammann", "Dungeons & Dragons", "Reference/Game");
 INSERT INTO books VALUES (NULL, "Live to Tell the Tale", "Keith Ammann", "Dungeons & Dragons", "Reference/Game");
 INSERT INTO books VALUES (NULL, "Game Angry: How to RPG the Angry Way", "Scott Rehm", NULL, "Reference/Game");
+
+INSERT INTO books VALUES (NULL, "Fizban's Treasury of Dragons (5E)", "Wizards of the Coast", "Dungeons & Dragons/5E", "Reference/Game");

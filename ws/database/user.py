@@ -6,7 +6,7 @@ from datetime import datetime
 from fastapi import HTTPException, status
 
 from auth.auth_helpers import get_password_hash
-from models.user_model import UserRegister
+from models.user import UserRegister
 from .sqlite3 import connect_db, DATABASE_PATH, get_db_one
 
 def create_user(user: UserRegister):
