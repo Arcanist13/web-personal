@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FilModule } from './modules/fil/fil.module';
 import { LibraryModule } from './modules/library/library.module';
 import { UserModule } from './modules/user/user.module';
+import { HomeModule } from './modules/home/home.module';
 
 import { StaticModule } from './static/static.module';
 
@@ -17,11 +18,12 @@ const APP_MODULES = [
   FilModule,
   LibraryModule,
   UserModule,
+  HomeModule,
 ]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

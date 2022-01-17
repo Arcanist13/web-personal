@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FilComponent } from './fil.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-
+import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
-    FilComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
   ]
 })
-export class FilModule { }
+export class HomeModule { }

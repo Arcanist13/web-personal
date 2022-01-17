@@ -12,6 +12,8 @@ import { sortData } from 'src/app/static/functions/sort.function';
 })
 export class LibraryComponent {
 
+  public filterText = '';
+
   private _library: Array<IBook> = [];
   private _baseLibrary: Array<IBook> = [];
 
@@ -41,8 +43,8 @@ export class LibraryComponent {
    * @returns     filter pass status
    */
   checkFilter(book: IBook): boolean {
-    return true;
-    // return this._spellFilterService.checkSpellFilter(spell, this.filter);
+    return book.name.toLowerCase().includes(this.filterText.toLowerCase()) ||
+           book.authour.toLowerCase().includes(this.filterText.toLowerCase());
   }
 
     /**

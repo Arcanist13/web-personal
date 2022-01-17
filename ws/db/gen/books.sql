@@ -548,3 +548,9 @@ INSERT INTO books VALUES (NULL, "Live to Tell the Tale", "Keith Ammann", "Dungeo
 INSERT INTO books VALUES (NULL, "Game Angry: How to RPG the Angry Way", "Scott Rehm", NULL, "Reference/Game");
 
 INSERT INTO books VALUES (NULL, "Fizban's Treasury of Dragons (5E)", "Wizards of the Coast", "Dungeons & Dragons/5E", "Reference/Game");
+INSERT INTO books VALUES (NULL, "Candlekeep Mysteries (5E)", "Wizards of the Coast", "Dungeons & Dragons/5E", "Reference/Game");
+
+INSERT INTO books VALUES (NULL, "Vietnamese Cooking", "Periplus Editions", NULL, "Reference/Cooking");
+INSERT INTO books VALUES (NULL, "The Rought Guide to South America on a Budget", "Rough Guides", "Rough Guides", "Reference/Travel");
+
+INSERT INTO books VALUES (NULL, "Till we have Faces", "C.S. Lewis", NULL, "Fiction");

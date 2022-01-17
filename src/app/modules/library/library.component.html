@@ -1,10 +1,21 @@
-<!-- Spell list -->
+<div class="row justify-content-center">
+  <!-- Search Filter -->
+  <mat-form-field class="search-form-field mt-4" appearance="fill">
+    <mat-label>Search</mat-label>
+    <input matInput type="text" [(ngModel)]="filterText">
+    <button *ngIf="filterText" matSuffix mat-icon-button aria-label="Clear" (click)="filterText=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+
+<!-- Book list -->
 <div class="table-responsive">
   <table matSort (matSortChange)="sortData($event)" class="table table-sm table-hover no-select">
     <thead class="thead-light">
       <tr class="d-flex">
-        <th mat-sort-header="name" class="col-md-5 col-sm-6 col-6">Name</th>
-        <th mat-sort-header="authour" class="col-md-3 col-sm-6 col-6">Authour</th>
+        <th mat-sort-header="name" class="col-md-5 col-sm-12 col-12">Name</th>
+        <th mat-sort-header="authour" class="col-md-3 d-none d-md-table-cell">Authour</th>
         <th mat-sort-header="series_name" class="col-md-2 d-none d-md-table-cell">Series</th>
         <th mat-sort-header="genre" class="col-md-2 d-none d-md-table-cell">Genre</th>
       </tr>
@@ -12,8 +23,8 @@
     <tbody>
       <tr *ngFor="let book of library; index as idx" class="d-flex">
         <ng-container *ngIf="checkFilter(book)">
-          <td class="col-md-5 col-sm-6 col-6">{{ book.name }}</td>
-          <td class="col-md-3 col-sm-6 col-6">{{ book.authour }}</td>
+          <td class="col-md-5 col-sm-12 col-12">{{ book.name }}</td>
+          <td class="col-md-3 d-none d-md-table-cell">{{ book.authour }}</td>
           <td class="col-md-2 d-none d-md-table-cell">{{ book.series_name }}</td>
           <td class="col-md-2 d-none d-md-table-cell">{{ book.genre }}</td>
         </ng-container>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DefaultComponent } from './static/components/default/default.component';
 
 const routes: Routes = [
   {
@@ -15,8 +16,12 @@ const routes: Routes = [
     loadChildren: () => import('src/app/modules/fil/fil-routing.module').then(m => m.FilRoutingModule)
   },
   {
+    path: 'home',
+    loadChildren: () => import('src/app/modules/home/home-routing.module').then(m => m.HomeRoutingModule)
+  },
+  {
     path: '**',
-    redirectTo: '/'
+    component: DefaultComponent
   }
 ];
 

@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
+import { RouterModule } from '@angular/router';
 
 const MATERIAL_IMPORTS = [
   MatDialogModule,
@@ -28,6 +29,7 @@ const MATERIAL_IMPORTS = [
   imports: [
     CommonModule,
     HttpClientModule,
+    RouterModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -35,6 +37,7 @@ const MATERIAL_IMPORTS = [
   ],
   exports: [
     HttpClientModule,
+    RouterModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
