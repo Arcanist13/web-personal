@@ -1,12 +1,22 @@
-<div class="row justify-content-center">
+<div class="row justify-content-center mt-4">
+  <div class="col-1"></div>
   <!-- Search Filter -->
-  <mat-form-field class="search-form-field mt-4" appearance="fill">
-    <mat-label>Search</mat-label>
-    <input matInput type="text" [(ngModel)]="filterText">
-    <button *ngIf="filterText" matSuffix mat-icon-button aria-label="Clear" (click)="filterText=''">
-      <mat-icon>close</mat-icon>
+  <div class="col">
+    <mat-form-field class="search-form-field" appearance="fill">
+      <mat-label>Search</mat-label>
+      <input matInput type="text" [(ngModel)]="filterText">
+      <button *ngIf="filterText" matSuffix mat-icon-button aria-label="Clear" (click)="filterText=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="userService.loggedIn && userService.isAdmin" class="col-1 text-center">
+    <button mat-mini-fab color="success" aria-label="Add Book" (click)="createBookDialog()">
+      <mat-icon>add</mat-icon>
     </button>
-  </mat-form-field>
+  </div>
+  <div class="col-1"></div>
 </div>
 
 <!-- Book list -->
@@ -14,22 +24,36 @@
   <table matSort (matSortChange)="sortData($event)" class="table table-sm table-hover no-select">
     <thead class="thead-light">
       <tr class="d-flex">
-        <th mat-sort-header="name" class="col-md-5 col-sm-12 col-12">Name</th>
+        <th mat-sort-header="name" class="col-md col-sm col">Name</th>
         <th mat-sort-header="authour" class="col-md-3 d-none d-md-table-cell">Authour</th>
         <th mat-sort-header="series_name" class="col-md-2 d-none d-md-table-cell">Series</th>
         <th mat-sort-header="genre" class="col-md-2 d-none d-md-table-cell">Genre</th>
+        <th *ngIf="userService.loggedIn && userService.isAdmin" class="col-3">Admin</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let book of library; index as idx" class="d-flex">
         <ng-container *ngIf="checkFilter(book)">
-          <td class="col-md-5 col-sm-12 col-12">{{ book.name }}</td>
+          <td class="col-md col-sm col">{{ book.name }}</td>
           <td class="col-md-3 d-none d-md-table-cell">{{ book.authour }}</td>
           <td class="col-md-2 d-none d-md-table-cell">{{ book.series_name }}</td>
           <td class="col-md-2 d-none d-md-table-cell">{{ book.genre }}</td>
+          <td *ngIf="userService.loggedIn && userService.isAdmin" class="col-3">
+            <div class="row no-gutter text-center">
+              <div class="col p-0 text-center">
+                <button mat-mini-fab class="small-button" color="edit" aria-label="Edit Book" (click)="createBookDialog(book)">
+                  <mat-icon class="small-icon">edit</mat-icon>
+                </button>
+              </div>
+              <div class="col p-0 text-center">
+                <button mat-mini-fab class="small-button" color="danger" aria-label="Remove Book" (click)="deleteBookDialog(book)">
+                  <mat-icon class="small-icon">delete</mat-icon>
+                </button>
+              </div>
+            </div>
+          </td>
         </ng-container>
       </tr>
     </tbody>
   </table>
 </div>
-

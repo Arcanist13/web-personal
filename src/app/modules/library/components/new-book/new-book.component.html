@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>New Book</h1>
+<div mat-dialog-content>
+  <!-- Book Title -->
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput [formControl]="title">
+    <mat-error *ngIf="title.invalid">{{ getErrorMessage(title) }}</mat-error>
+  </mat-form-field>
+  <br>
+
+  <!-- Book Authour -->
+  <mat-form-field appearance="fill">
+    <mat-label>Authour</mat-label>
+    <input matInput [formControl]="authour">
+    <mat-error *ngIf="authour.invalid">{{ getErrorMessage(authour) }}</mat-error>
+  </mat-form-field>
+  <br>
+
+  <!-- Book Series -->
+  <mat-form-field appearance="fill">
+    <mat-label>Series</mat-label>
+    <input matInput [formControl]="series">
+    <mat-error *ngIf="series.invalid">{{ getErrorMessage(series) }}</mat-error>
+  </mat-form-field>
+  <br>
+
+  <!-- Book Genre -->
+  <mat-form-field appearance="fill">
+    <mat-label>Genre</mat-label>
+    <input matInput [formControl]="genre">
+    <mat-error *ngIf="genre.invalid">{{ getErrorMessage(genre) }}</mat-error>
+  </mat-form-field>
+  <br>
+
+</div>
+
+<!-- Close Dialogue -->
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button class="mat-create" [disabled]="!validData()" [mat-dialog-close]="getBookData()" cdkFocusInitial>{{ data && data.id ? 'Update' : 'Create' }}</button>
+</div>

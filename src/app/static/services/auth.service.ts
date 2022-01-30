@@ -30,7 +30,7 @@ export class AuthService {
   ) {
     // Configure the oauth service
     this._oAuthService.configure(this._authCodeFlowConfig);
-    this._oAuthService.setStorage(sessionStorage);
+    this._oAuthService.setStorage(localStorage);
   }
 
   /**

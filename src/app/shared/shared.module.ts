@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { RouterModule } from '@angular/router';
+import { ConfirmDialogComponent } from './dialog/confirm-dialog/confirm-dialog.component';
 
 const MATERIAL_IMPORTS = [
   MatDialogModule,
@@ -22,9 +23,13 @@ const MATERIAL_IMPORTS = [
   MatSortModule,
 ];
 
+const DIALOG_COMPONENTS = [
+  ConfirmDialogComponent,
+]
+
 @NgModule({
   declarations: [
-
+    ...DIALOG_COMPONENTS,
   ],
   imports: [
     CommonModule,
@@ -42,6 +47,7 @@ const MATERIAL_IMPORTS = [
     FormsModule,
     ReactiveFormsModule,
     ...MATERIAL_IMPORTS,
+    ...DIALOG_COMPONENTS,
   ]
 })
 export class SharedModule { }

@@ -1,3 +1,11 @@
 .search-form-field {
-  width: 80%;
+  width: 100%;
+}
+
+.small-button {
+  transform: scale(0.75);
+  transform-origin: top left;
+}
+.small-icon {
+  transform: scale(0.75);
 }

@@ -3,3 +3,7 @@
 html, body { height: 100%; }
 .header-space { padding-top: 56px; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-success { background-color: #28a745; color: #fff; }
+.mat-danger { background-color: #f44336; color: #fff; }
+.mat-edit { background-color: #007bff; color: #fff; }
