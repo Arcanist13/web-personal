@@ -11,12 +11,12 @@ from jose import JWTError, jwt
 from database.user import get_db_user
 from models.user import User, UserInDB
 from models.auth import TokenData
+from auth.secrets import SECRET_KEY
 
 from .auth_helpers import verify_password
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-SECRET_KEY = "e25bb488d016fb10f6d2b4e262e2c1afef23fc35a79f0168a9459a0aceb392cb"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 6 * 60 #6hr timeout
 
